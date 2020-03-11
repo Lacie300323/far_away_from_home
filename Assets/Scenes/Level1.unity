@@ -1518,6 +1518,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 117371227}
+    - target: {fileID: 3711720007975050398, guid: 371ab4c3a5686324a8b03fb553b1e28b,
+        type: 3}
+      propertyPath: startTimebtwShots
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 371ab4c3a5686324a8b03fb553b1e28b, type: 3}
 --- !u!4 &274118076 stripped
@@ -2974,7 +2979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724758050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.784826, y: -9.64901, z: -11.290096}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 976385958}
@@ -3922,7 +3927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976385955}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.784826, y: 9.64901, z: 11.290096}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 724758051}
@@ -3962,8 +3967,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -152, y: 58}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: -162, y: 56}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &985633383
 MonoBehaviour:
@@ -4523,7 +4528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111430966}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.784826, y: 9.64901, z: 11.290096}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 724758051}
@@ -4668,7 +4673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -50}
+  m_AnchoredPosition: {x: 61, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1148189054
@@ -4701,7 +4706,6 @@ GameObject:
   - component: {fileID: 1178729915}
   - component: {fileID: 1178729914}
   - component: {fileID: 1178729916}
-  - component: {fileID: 1178729917}
   m_Layer: 5
   m_Name: LevelComplete
   m_TagString: Untagged
@@ -4787,18 +4791,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1178729917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178729912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd5c4c43fbf87374fb77a664fa5d336b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1216007426
 GameObject:
   m_ObjectHideFlags: 0
@@ -6559,6 +6551,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 117371227}
+    - target: {fileID: 3711720007975050398, guid: 371ab4c3a5686324a8b03fb553b1e28b,
+        type: 3}
+      propertyPath: startTimebtwShots
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 371ab4c3a5686324a8b03fb553b1e28b, type: 3}
 --- !u!4 &1560004777 stripped
@@ -6914,7 +6911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756683209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.680679, y: 6.064951, z: 1.3682213}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 724758051}
@@ -8069,6 +8066,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 117371227}
+    - target: {fileID: 3711720007975050398, guid: 371ab4c3a5686324a8b03fb553b1e28b,
+        type: 3}
+      propertyPath: startTimebtwShots
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 371ab4c3a5686324a8b03fb553b1e28b, type: 3}
 --- !u!4 &1951846555 stripped
@@ -9145,6 +9147,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 117371227}
+    - target: {fileID: 3711720007975050398, guid: 371ab4c3a5686324a8b03fb553b1e28b,
+        type: 3}
+      propertyPath: startTimebtwShots
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 371ab4c3a5686324a8b03fb553b1e28b, type: 3}
 --- !u!1001 &6686363547171921986
