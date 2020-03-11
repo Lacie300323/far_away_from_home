@@ -5,24 +5,20 @@ using UnityEngine;
 
 public class SceneLoader : MonoBehaviour
 {
-    public static SceneLoader instance;
-    private void Awake()
+
+    public void LoadMenu()
     {
-        // If a Sceneloader Manager already exists (and it is not this object), delete this
-        if (instance != null && instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        // If it doesn't exist yet, make this the only Sceneloader Manager to exist
-        else if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
+        SceneManager.LoadScene("MainMenu");
     }
 
-    public void LoadMainMenu()
+
+    public void LoadLevelSelect()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Level1Select");
+    }
+
+    public void LoadNewGame()
+    {
+        SceneManager.LoadScene("Level1");
     }
 }

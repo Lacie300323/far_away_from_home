@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 160623284}
   - component: {fileID: 160623283}
   m_Layer: 0
-  m_Name: SceneLoad Management
+  m_Name: SceneLoader Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2855,7 +2855,7 @@ GameObject:
   - component: {fileID: 1269253200}
   - component: {fileID: 1269253199}
   m_Layer: 5
-  m_Name: Exit Game
+  m_Name: Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2924,8 +2924,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: quitGame
+      - m_Target: {fileID: 160623283}
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4551,7 +4551,7 @@ GameObject:
   - component: {fileID: 1852697118}
   - component: {fileID: 1852697117}
   m_Layer: 5
-  m_Name: Main Menu
+  m_Name: Level Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4890,7 +4890,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2018702576}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 160623283}
+        m_MethodName: LoadNewGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2018702576
 MonoBehaviour:
   m_ObjectHideFlags: 0

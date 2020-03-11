@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        // SceneManager.LoadScene("namesecene");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void LoadNextLevel()
