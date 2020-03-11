@@ -8,5 +8,6 @@ public class LevelComplete : MonoBehaviour
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // SceneManager.LoadScene("namesecene");
     }
 }

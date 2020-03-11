@@ -24,7 +24,6 @@ public class ScoreManager : MonoBehaviour
         }
 
         totalScore = GameObject.FindGameObjectsWithTag("Coin").Length; //Find all the objects with the tag coin
-        Debug.Log(totalScore);
         totalCount.text = totalScore.ToString(); //Convert the total count int into text and parse this into the textmesh object
     }
 

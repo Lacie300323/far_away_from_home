@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
 {
     private bool gameOver = false; ///Bool to check if the game has ended
     
-    public float restartDelay = 1f; //The amount of time it takes to restart the game
     public GameObject levelCompleteUI;
+    public GameObject gameOverUI;
 
 
     public void CompleteLevel()
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         {
             gameOver = true;
             Debug.Log("Game Over");
-            Invoke("Restart", restartDelay);
+            gameOverUI.SetActive(true);
         }
     }
 

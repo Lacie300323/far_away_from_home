@@ -15,7 +15,6 @@ public class StarHandler : MonoBehaviour
     void Start()
     {
         coinsTotal = GameObject.FindGameObjectsWithTag("Coin").Length; //Find all the objects with the tag coin
-        Debug.Log(coinsTotal);
     }
 
     public void starsAcquired()
@@ -34,7 +33,7 @@ public class StarHandler : MonoBehaviour
             stars[1].sprite = emptystar;
             stars[2].sprite = emptystar;
         }     
-        else if( percentage >= 33f && percentage < 66) //If the percentage is inbetween 33 and 66 (or 1/3 and 2/3) 
+        else if( percentage >= 33f || percentage < 33f && percentage < 66) //If the percentage is inbetween 33 and 66 (or 1/3 and 2/3) 
         {
             //Set 1 star
             stars[0].sprite = fullstar; //Show the full star sprite 
