@@ -6,18 +6,14 @@ public class Boundaries : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name + " has entered the boundaries");
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {            
-            Debug.Log(collision.name + " has exited the boundaries");
-            collision.gameObject.GetComponent<Health>().TakeDamage(1);
-            CheckpointManager.instance.RestorePlayerToCheckpoint();
+        Rigidbody2D collidedObject = collision.gameObject.GetComponent<Rigidbody2D>(); // Getting the rigidbody of the collided object
 
-            Player playerScript = collision.gameObject.GetComponent<Player>();
-            playerScript.inverseGravity = false;
+        if(collision.CompareTag("Player"))
+        {
+            CheckpointManager.instance.RestorePlayerToCheckpoint();
+            collidedObject.velocity = Vector2.zero; // set movement to 0
+            Debug.Log(collision.name + "has left the boundaries");
+            
         }
     }
 }
