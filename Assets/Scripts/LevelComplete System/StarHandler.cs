@@ -32,8 +32,8 @@ public class StarHandler : MonoBehaviour
             stars[0].sprite = emptystar; //Show the empty star sprite 
             stars[1].sprite = emptystar;
             stars[2].sprite = emptystar;
-        }     
-        else if( percentage >= 33f || percentage < 33f && percentage < 66) //If the percentage is inbetween 33 and 66 (or 1/3 and 2/3) 
+        } 
+        else if(percentage < 0 && percentage < 33 || percentage >= 33  && percentage < 66) //If the percentage is inbetween 33 and 66 (or 1/3 and 2/3) 
         {
             //Set 1 star
             stars[0].sprite = fullstar; //Show the full star sprite 
